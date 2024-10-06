@@ -1,0 +1,52 @@
+{
+  "name": "@velmoo/utils",
+  "version": "1.0.0",
+  "description": "Collection of utility functions.",
+  "scripts": {
+    "build": "pnpm format && tsup && pnpm gen-pkg-exports",
+    "dev": "tsup --watch",
+    "lint": "tsc",
+    "format": "prettier --write **/*.{js,ts,json}",
+    "gen-pkg-exports": "ts-node -r tsconfig-paths/register scripts/gen-pkg-exports.ts"
+  },
+  "author": "Rabah Taib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/velmoo/utils"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json",
+    "./array": "./dist/array.js",
+    "./index": "./dist/index.js",
+    "./math": "./dist/math.js",
+    "./mix": "./dist/mix.js",
+    "./number": "./dist/number.js",
+    "./object": "./dist/object.js",
+    "./path": "./dist/path.js",
+    "./regexp": "./dist/regexp.js",
+    "./string": "./dist/string.js"
+  },
+  "keywords": [
+    "velmo",
+    "utils",
+    "typescript",
+    "types"
+  ],
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.7.4",
+    "@types/vscode": "^1.94.0",
+    "@velmoo/types": "^1.0.1",
+    "fs-extra": "^11.2.0",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.2.4",
+    "typescript": "^5.6.2"
+  }
+}
