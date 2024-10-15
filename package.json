@@ -1,6 +1,6 @@
 {
   "name": "@velmoo/utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Collection of utility functions.",
   "scripts": {
     "build": "pnpm format && tsup && pnpm gen-pkg-exports",
@@ -29,7 +29,8 @@
     "./object": "./dist/object.js",
     "./path": "./dist/path.js",
     "./regexp": "./dist/regexp.js",
-    "./string": "./dist/string.js"
+    "./string": "./dist/string.js",
+    "./web": "./dist/web.js"
   },
   "keywords": [
     "velmo",
